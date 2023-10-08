@@ -1,19 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kerner Norland</title>
+
+    <!--font awsome Cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
 
 </head>
 
 <body>
 
     <!-- header -->
+    <header class="header">
 
-    <div class="logo">
-        <a href="logo" class="logo"> <img src="./Assets/content.svg" alt=""><span>Untitled UI</span></a>
-    </div>
-    
+        <a href="#" class="logo"> <img src="./Assets/content.svg" alt="">
+            <span class="logo-text">Untitled UI</span></a>
+
+
+        <nav class="navbar">
+            <ul class="nav-ul">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products<i class="fa-solid fa-chevron-down"></i></a>
+                    <ul class="submenu">
+                        <li><a href="#">Products 1</a></li>
+                        <li><a href="#">Products 2</a></li>
+                    </ul>
+                </li>
+                <li><a href="#resources">Resources<i class="fa-solid fa-chevron-down"></i></a>
+                    <ul class="submenu">
+                        <li><a href="#">Resources 1 </a></li>
+                        <li><a href="#">Resources 2</a></li>
+                    </ul>
+                </li>
+
+
+                <li><a href="#pricing">Pricing</a></li>
+
+            </ul>
+
+
+        </nav>
+
+        <!-- Login/ Logout -->
+        <div class="nav_buttons">
+
+            <a href="#">Log in</a>
+            <button onclick="" class="signup">Sign Up </button>
+
+
+        </div>
+
+    </header>
+
+        <section class="main-home">
+            <div class="main-text">
+                <div class="hiring">
+                    <img class="dot-icon" alt="" src="./Assets/pdot.svg" />
+                <p>We're Hiring!</p>
+                <p>Join our team</p>
+                </div>
+                <h1>Smart business <br>credit card</h1>
+            </div>
+        </section>
+
+
+
+
+    <script src="./js/script.js"></script>
 </body>
+
 </html>
+
