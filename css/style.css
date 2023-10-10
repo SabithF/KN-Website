@@ -581,6 +581,7 @@ input[type=text] {
   max-width: 2500px;
   width: 120%;
   margin-top: 50px;
+  margin-bottom: 18PX;
 }
 
 .slider-wrapper .image-list {
@@ -604,7 +605,8 @@ input[type=text] {
 }
 
 .slider-wrapper .slide-button {
-  margin-top: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
   height: 50px;
   width: 50px;
   color: var(--gray-700);
@@ -667,8 +669,72 @@ input[type=text] {
   font-size: 15px;
 }
 
-.slide-text .text2 {
-  font-size: 15px;
+.trial {
+  background-color: rgba(241, 242, 245, 0.662745098);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.trial-btn {
+  align-content: center;
+  justify-content: center;
+  margin-top: -40px;
+}
+
+.trial-head {
+  margin-top: 40px;
+}
+
+.dashboard-img {
+  max-width: 100%;
+  height: auto;
+  margin: 40px auto 0 0;
+  border: 3px solid black;
+  border-radius: 15px 15px 0 0;
+  border-bottom: none;
+}
+
+footer {
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  padding: 60px 0 30px;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+footer .row {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.col {
+  flex-basis: 25%;
+  padding: 10px;
+}
+
+footer .logo {
+  margin-bottom: 30px;
+}
+
+.col h3 {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-bottom: 12px;
+  position: relative;
+  font-size: 11px;
+}
+
+.fcol p {
+  color: var(--primary-700);
+  font-weight: 700;
+  padding-bottom: 10px;
 }
 
 @media (max-width: 1350px) {
@@ -758,7 +824,7 @@ input[type=text] {
     width: 90%;
   }
   .btn {
-    width: 280px;
+    width: auto;
   }
   .slider-wrapper .slide-button {
     display: none !important;
@@ -773,6 +839,9 @@ input[type=text] {
   }
   .img-btn {
     padding: 10px 14px;
+  }
+  .ban-btn {
+    font-size: 12px;
   }
 }
 @media (max-width: 767px) {
