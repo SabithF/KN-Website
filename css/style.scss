@@ -624,6 +624,145 @@ input[type="text"] {
     
 }
 
+// Image slider
+
+
+.imgl-heading{
+    font-size: 20px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+
+}
+
+.img-buttons{
+    position: flex;
+}
+
+.img-btn{
+    margin-left: 10px;
+}
+
+.ourcus{
+    border: 1px solid var(--gray-300);
+}
+
+.image-list {
+    max-width: 2500px;
+    width: 120%;
+    margin-top: 50px;
+}
+
+.slider-wrapper .image-list{
+    display: grid;
+    gap: 18px   ;
+    font-size: 0;
+    overflow-x: auto;
+    scrollbar-width: none;
+    grid-template-columns: repeat(10, 1fr);
+}
+
+.slider-wrapper .image-list::-webkit-scrollbar{
+    display: none;
+}
+
+.slider-wrapper .image-list .image-item{
+    width: 320px;
+    height: 410px;
+    object-fit: cover;
+}
+.image-list-slide{
+    // background-color: #a41de7;
+}
+
+.slider-wrapper .slide-button {
+    margin-top: 20px;
+    height: 50px;
+    width: 50px;
+    color: var(--gray-700);
+    background-color: white ;
+    border: 1px solid var(--gray-300);
+    border-radius: 50%;
+    position: relative;
+    
+}
+
+#prev-slide{
+    margin-right: 20px;
+}
+
+.slider-wrapper .slide-button:hover{
+    background: #bebdbd6e;
+}
+
+.star-icon{
+    margin-top: 10px;
+    font-size: 15px;
+    text-align: left;
+}
+
+.slide-text p{
+    margin: 20px;
+    text-align: left;
+}
+
+.slide{
+    position: relative;
+}
+
+.slide-content{
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    right: 5%;
+    background-color: rgba(255, 255, 255, 0.236);
+    padding: 10px;
+    color: rgba(255, 255, 255, 0.288);
+    text-align: center;
+    // padding: 10px;
+    color: white;
+    text-align: center;
+    backdrop-filter: blur(3px);
+    border: 1px solid white;
+    
+
+}
+
+.star-icon{
+    margin-left: 10px;
+    font-size: 10px;
+}
+
+.slide-text .text1
+ {
+    font-weight: bold;
+    font-size: 20px;
+
+    
+}
+
+.slide-text .text2{
+    font-size: 15px;
+}
+
+.slide-text .text2{
+    font-size: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -748,6 +887,23 @@ input[type="text"] {
         width: 280px;
     }
 
+    .slider-wrapper .slide-button{
+        display: none!important;
+    }
+
+    .slider-wrapper.image-list{
+        gap: 10px;
+        margin-bottom: 15px;
+    }
+
+    .slider-wrapper .image-list .image-item {
+        width: 280px;
+        height: 380px;
+    } 
+
+    .img-btn{
+        padding: 10px 14px;
+    }
 
 }
 
